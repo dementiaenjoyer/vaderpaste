@@ -545,7 +545,7 @@ local abs = math.abs
                     SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79))
                 })
 
-                library:apply_theme(glow, "accent", "ImageColor3") 
+                
                 
                 task.spawn(function()
                     while true do 
@@ -683,7 +683,7 @@ local abs = math.abs
                     BorderSizePixel = 0,
                     SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79))
                 })
-                library:apply_theme(glow, "accent", "ImageColor3") 
+                
                 
                 local depth = library:create("Frame", {
                     Parent = inline1,
@@ -893,7 +893,7 @@ local abs = math.abs
                         SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79))
                     })
 
-                    library:apply_theme(glow, "accent", "ImageColor3") 
+                    
 
                     table.insert(glow_patterns, glow)
                 end 
@@ -1428,7 +1428,7 @@ local abs = math.abs
                     SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79))
                 })
 
-                library:apply_theme(glow, "accent", "ImageColor3") 
+                
             -- 
             
             -- playerlist 
@@ -1886,7 +1886,7 @@ local abs = math.abs
                     SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79))
                 })  
 
-                library:apply_theme(glow, "accent", "ImageColor3") 
+                
 
                 local function create_player(player)
                     local TextButton = library:create("TextButton", {
@@ -2075,7 +2075,7 @@ local abs = math.abs
                     SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79))
                 })
 
-                library:apply_theme(glow, "accent", "ImageColor3") 
+                
                 
                 local inline1 = library:create("Frame", {
                     Parent = old_kblist,
@@ -2382,7 +2382,7 @@ local abs = math.abs
                     SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79))
                 })
 
-                library:apply_theme(glow, "accent", "ImageColor3") 
+                
             -- 
 
             task.spawn(function()
@@ -2464,7 +2464,7 @@ local abs = math.abs
                     SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79))
                 })
 
-                library:apply_theme(glow, "accent", "ImageColor3") 
+                
                 
                 local depth = library:create("Frame", {
                     Parent = line,
@@ -3074,7 +3074,7 @@ local abs = math.abs
                     SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79))
                 })
 
-                library:apply_theme(glow, "accent", "ImageColor3") 
+                
 
                 button.MouseButton1Click:Connect(function()
                     bools[name] = not bools[name]
@@ -3194,7 +3194,7 @@ local abs = math.abs
                     SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79))
                 })
 
-                library:apply_theme(glow, "accent", "ImageColor3") 
+                
             
                 local bottom_components = library:create("Frame", {
                     Parent = object,
@@ -3385,7 +3385,7 @@ local abs = math.abs
                 SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79))
             })
 
-            library:apply_theme(glow, "accent", "ImageColor3") 
+            
             
             local add = library:create("TextButton", {
                 Parent = slider_inline,
