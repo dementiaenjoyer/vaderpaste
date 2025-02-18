@@ -1,4 +1,3 @@
-
 local uis = game:GetService("UserInputService") 
 local players = game:GetService("Players") 
 local ws = game:GetService("Workspace")
@@ -73,7 +72,6 @@ local abs = math.abs
             ["text"] = rgb(170, 170, 170),
             ["unselected_text"] = rgb(90, 90, 90),
             ["text_outline"] = rgb(0, 0, 0),
-            ["glow"] = rgb(100, 100, 255), 
         }, 	
 
         utility = {
@@ -100,9 +98,6 @@ local abs = math.abs
             ["text_outline"] = {
                 ["Color"] = {}, 	
             },
-            ["glow"] = {
-                ["ImageColor3"] = {}, 	
-            }, 
         }, 
     }
 
@@ -836,17 +831,7 @@ local abs = math.abs
                     BackgroundColor3 = Color3.fromRGB(38, 38, 38)
                 })
 
-                local glow_patterns = {} 
-
-                for _, v in next, hitpart:GetChildren() do 
-                    table.insert(glow_patterns, glow)
-                end 
-
                 function cfg.preview_chams(bool) 
-                    for _, glow in next, glow_patterns do 
-                        glow.Visible = bool
-                    end 
-
                     for _, part in next, hitpart:GetChildren() do 
                         part.BackgroundColor3 = bool and themes.preset.accent or Color3.fromRGB(38, 38, 38)
                     end 
@@ -2459,7 +2444,6 @@ local abs = math.abs
                 }
                 
                 line.BackgroundColor3 = themes.preset.accent 
-                glow.Visible = true
                 TAB_BUTTON.TextColor3 = themes.preset.text 
                 TAB.Visible = true
 
@@ -2914,7 +2898,6 @@ local abs = math.abs
                         table.remove(flags[cfg.flag], index)
                     end 
 
-                    glow.Visible = bools[name]
                     button.BackgroundColor3 = bools[name] and themes.preset.accent or Color3.fromRGB(38, 38, 38)
                 end)
             end 
@@ -3026,7 +3009,6 @@ local abs = math.abs
                 
             function cfg.set(bool)
                 icon_2.Visible = bool
-                glow.Visible = bool
                 
                 flags[cfg.flag] = bool
                 
@@ -4122,7 +4104,6 @@ local abs = math.abs
                 alpha_cursor.Position = dim2(a, offset, 0, 0)
 
                 visual.BackgroundColor3 = Color
-                glow.ImageColor3 = Color
                 
                 local RGB_Format = visual.BackgroundColor3
 
