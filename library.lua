@@ -2434,7 +2434,6 @@ local abs = math.abs
 
                     local parent = button:FindFirstChildOfClass("Frame")
                     parent.BackgroundColor3 = rgb(57, 57, 57)
-                    parent:FindFirstChildOfClass("ImageLabel").Visible = false
 
                     library.current_tab[2].Visible = false 
                 end
